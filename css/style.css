@@ -84,11 +84,19 @@ body {
   padding: 5px;
   font-size: 30px;
 }
+#section1 .text h3 {
+  padding: 5px 0 10px 0;
+}
 #section1 .image {
   width: 100%;
 }
 #section1 .image img {
   width: 100%;
+}
+#section1 .margin {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fafafa;
 }
 
 /* impostazioni section 2 */
