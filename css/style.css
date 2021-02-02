@@ -1,6 +1,8 @@
+/* impostazioni generali */
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 10px;
+  font-size: 13px;
+  position: relative;
 }
 
 .container_1000 {
@@ -8,13 +10,129 @@ body {
   margin: 0 auto;
 }
 
+/* impostazioni header */
+.header_top {
+  width: 100%;
+  height: 80px;
+  padding-top: 30px;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+/* impostazioni menu */
 .menu_inline {
   list-style: none;
+  line-height:
 }
 .menu_inline li {
   display: inline-block;
+  padding-right: 5px;
+  font-weight: bold;
 }
 .menu_inline li a {
   text-decoration: none;
   color: black;
+}
+.menu_border li {
+  border-right: 1px solid black;
+}
+
+/* impostazioni jumbo */
+.jumbo {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 15px;
+  background-image: url('../img/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+
+}
+.jumbo h1 {
+  font-size: 30px;
+}
+.jumbo p {
+  padding: 10px 0;
+}
+.jumbo_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* impostazioni main */
+main .container {
+  padding: 5px;
+  width: 100%;
+}
+main .container .text {
+  text-align: center;
+  padding: 20px;
+}
+main .container .text h2 {
+  padding: 5px;
+  font-size: 30px;
+}
+
+main .container .image {
+  width: 100%;
+}
+main .container .image img {
+  width: 100%;
+}
+
+
+/* impostazioni responsive */
+#bars {
+  display: none;
+}
+
+/* impostazioni tablet */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .header_top ul {
+    display: none;
+  }
+  #bars {
+    display: block;
+    font-size: 25px;
+  }
+  #bars i {
+    float: right;
+    padding-right: 10px;
+  }
+  header .col-md-11 {
+    padding-left: 10px;
+  }
+}
+
+/* impostazioni telefono */
+@media screen and (max-width: 768px) {
+  /* impostazioni telefono header */
+  .header_top ul {
+    display: none;
+  }
+  #bars {
+    display: block;
+    font-size: 25px;
+  }
+  #bars i {
+    float: right;
+    padding-right: 10px;
+  }
+  header .col-xs-11 {
+    padding-left: 10px;
+  }
+
+  /* impostazioni telefono jumbo */
+  .jumbo img {
+    width: 140px;
+  }
 }
